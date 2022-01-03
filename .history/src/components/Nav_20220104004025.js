@@ -5,8 +5,10 @@ import "./Nav.css";
 
 export default function Nav () {
     const history = useHistory();
-    const cart = useSelector(store => store.cartReducer);
-    
+    const cart = useSelector(store => store);
+
+    console.log(cart);
+
     return (
         <nav className="nav">
             <span className="nav-title" onClick={() => history.push("/")}>Redux-market</span>

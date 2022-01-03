@@ -20,7 +20,7 @@ export default function CartItem (item) {
             <span className="cart-item-name">{product.product_name}</span>
             <span className="cart-item-price" >{product.price}원</span>
             <i className="fas fa-trash-alt" onClick={() => {
-                dispatch(deleteCart(item));
+                deleteCart(item);
             }}></i>
         </div>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import "./ProductItem.css";
 
 import { useDispatch } from 'react-redux';
-import { addCart } from '../store/actions';
+import { addCart, deleteCart } from '../store/actions';
 
 export default function ProductItem ({ item }) {
 

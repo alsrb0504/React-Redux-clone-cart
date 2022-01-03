@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector } from 'react-redux';
+import { deleteCart } from '../store/actions';
 import CartItem from "./CartItem";
 import "./CartList.css";
-
 
 export default function CartList () {
     const cart = useSelector(store => store.cartReducer);
